@@ -32,7 +32,11 @@ with open(output_filename, 'w') as writer:
         img = cv2.imread(input_filename)
         
         character = pytesseract.image_to_string(img, config=custom_config)
-        character = character.rstrip()
+
+        # Remove whitespace, pick first character
+        character = character.rstrip()[0]
+        # print("{} => {}".format(filename, character))
+
         writer.write(character)
 
         bar.next()
