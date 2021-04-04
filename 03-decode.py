@@ -9,6 +9,7 @@ import pathlib
 import base64
 import numpy as np
 from PIL import Image
+import collections
 
 path = pathlib.Path.cwd()
 input_filename = str(path / 'result' / 'result.txt')
@@ -17,7 +18,17 @@ output_filename = str(path / 'result' / 'result.png')
 with open(input_filename, encoding='ascii') as reader:
     text = reader.read()
     print('Input text []:\n{}'.format(len(text), text))
- 
+
+    c = collections.Counter(text)
+    print('Counter:\n{}', c)
+
+    # Cleanup
+    text = text.replace("@", "c")
+    print('Input text cleaned []:\n{}'.format(len(text), text))
+
+    cc = collections.Counter(text)
+    print('Counter cleaned:\n{}', cc)
+
     base64_bytes = text.encode('ascii')
 
     missing_padding = len(base64_bytes) % 4
