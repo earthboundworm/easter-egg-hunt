@@ -1,6 +1,25 @@
 # Easter Egg Hunt
 
+## Zeroth egg
+
 https://wensveen.wordpress.com/2021/03/28/easter-egg-hunt/
+
+## First egg
+
+View the contents of the gif file with:
+```
+cat ./original/clue.gif | head
+```
+
+This yields the URL for the first egg:
+
+https://drive.google.com/file/d/1JObjSCDkcerk6bWs5VDB_h-LU8c5hXht/view
+
+The hint is `ZIP`.
+
+## Second egg
+
+Work in progress. First attempt:
 
 First, convert the animated gif to separate frames:
 ```
@@ -23,3 +42,8 @@ Next, attempt to decode the string with
 ```
 python 03-decode.py
 ```
+
+## Third egg
+
+
+## Fourth egg
