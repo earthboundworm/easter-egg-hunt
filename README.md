@@ -1,7 +1,5 @@
 # Easter Egg Hunt
 
-https://wensveen-wordpress-com.cdn.ampproject.org/c/s/wensveen.wordpress.com/2021/04/12/easter-egg-hunt-solution/amp/
-
 ## Zeroth egg
 
 https://wensveen.wordpress.com/2021/03/28/easter-egg-hunt/
@@ -49,3 +47,8 @@ python 03-decode.py
 
 
 ## Fourth egg
+
+## Full solution 
+
+https://wensveen-wordpress-com.cdn.ampproject.org/c/s/wensveen.wordpress.com/2021/04/12/easter-egg-hunt-solution/amp/
+
